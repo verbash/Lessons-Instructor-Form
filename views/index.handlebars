@@ -1,0 +1,126 @@
+
+<!-- window div -->
+<div class="container-fluid">
+    <!-- whole page row -->
+    <div class="row clearfix mt-3 m-0">
+
+        <!-- main left column "student" -->
+        <div class="col-md-4 h-100 m-0">
+            <!-- "student name" -->
+            <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>ADD STUDENT</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        {{!-- <form class="col add-student">
+                            <div class="form-group">
+                              <label for="addStudentName">Name</label>
+                              <input type="text" class="form-control" id="addStudentName" aria-describedby="add student name" placeholder="name">
+                            </div>
+                            <button type="submit submitNewStudent" id="submitNewStudent" href="/students/create" class="btn btn-primary">Submit</button>
+                          </form> --}}
+                        <form action="/students/create" method="POST">
+	                          <textarea type="text" name="student_name"></textarea>
+
+	                          <button type="submit">Submit</button>
+                            </form>
+
+                    </div>
+                </div>
+                
+            </div>
+           
+             <!-- "student list" -->
+             <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>Student List</h6>
+                        </div>
+                    </div>
+
+                    {{!-- select student --}}
+                    <div class="row card-text">
+                                <div class="input-group col">
+                                 <form action="/students/:id" method="GET">
+                                        <select class="custom-select" id="{{this.id}}">
+                                          <option>Choose...</option>
+										   {{#each student_data}}
+			  								<option value="{{this}}">{{this.id}}. {{this.student_name}}
+											</option>
+				  									<!-- {{this.Date}} -->
+										
+			  							{{/each}}
+                                        </select>
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" type="submit" data-id="{{this.id}}">Select </button>
+                                        </div>
+                                </form>
+                                </div>       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+              
+
+        <!-- main right column -->
+        <div class="col-md-8 h-100 m-0 student-display">
+           <p>student display</p>
+			<h1>{{this.name}}</h1>
+
+        
+        </div>
+    </div>
+</div>
+
+{{!-- stuff from template --}}
+{{!-- <div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center" id="top-bar">
+			
+			<h1> Students Roster </h1>
+		</div>
+		<div class="col-md-6 text-center" class="task">
+			<div class="row">
+			  {{#each student_data}}
+			  	{{#unless this.activated}}
+				<div class="col-md-9 text-center">
+					<pre>{{this.id}}. {{this.student_name}}
+					</pre>
+				  		<!-- {{this.Date}} -->
+				</div>
+				<div class="col-md-3 text-center">
+					<form class="activate-form button-size">
+						<input type="hidden" class="student_id" type="text" value={{this.id}}><br>
+						<button type="submit" class="btn btn-default">select student!</button>
+					</form>
+				</div>
+				{{/unless}}
+			  {{/each}}
+			</div>
+		</div>
+		<div class="col-md-6 text-center" class="task">
+			  {{#each student_data}}
+			  	{{#if this.activated}}
+			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.student_name}}" readonly>
+				{{/if}}
+			  {{/each}}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center enter_section">
+			<form action="/students/create" method="POST">
+				<input type="text" class="form-control" name="student_name" value="" id="enter_text">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+			<p>Add student and Click the "Submit" button.</p>
+		</div>
+	</div>
+</div> --}}

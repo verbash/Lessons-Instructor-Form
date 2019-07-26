@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="_assets/css/style.css">
+        <script type="text/javascript" src="./public/assets/js"></script>
+        <title>GC Lessons Instructor Assignment Form</title>
+    </head>
+
+<!-- set background image    -->
+<body>
+<!-- window div -->
+<div class="container-fluid">
+    <!-- whole page row -->
+    <div class="row clearfix mt-3 m-0">
+
+        <!-- main left column "student" -->
+        <div class="col-md-4 h-100 m-0">
+            <!-- "student name" -->
+            <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>ADD STUDENT</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        <form class="col add-student">
+                            <div class="form-group">
+                              <label for="addStudentName">Name</label>
+                              <input type="text" class="form-control" id="addStudentName" aria-describedby="add student name" placeholder="name">
+                            </div>
+                            <div class="form-group">
+                              <label for="addStudentInstrument">Instrument</label>
+                              <input type="password" class="form-control" id="addStudentInstrument" placeholder="instrument">
+                            </div>
+                            <!-- <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div> -->
+                            <button type="submit submitNewStudent" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
+                
+            </div>
+           
+             <!-- "student list" -->
+             <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>Student List</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                                <div class="input-group col">
+                                        <select class="custom-select" id="selectStudent">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" type="button">Select</button>
+                                        </div>
+                                </div>       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+              
+
+        <!-- main right column -->
+        <div class="col-md-8 h-100 m-0 student-display">
+           <p>student display</p>
+
+
+        
+        </div>
+    </div>
+</div>
+
+
+<!-- javascript links -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+    </body>
+</html>

@@ -1,0 +1,501 @@
+<!-- window div -->
+<div class="container-fluid">
+    <!-- whole page row -->
+    <div class="row clearfix mt-3 m-0">
+
+        <!-- main left column "student" -->
+        <div class="col-md-4 h-100 m-0">
+            <!-- "student name" -->
+            <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>{{studentId}}</h6>
+                            <h6>{{student_data.student_name}}</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        <div class="col form-group">
+                            <input type="text" class="form-control" id="formStudentName">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- "achievement program" -->
+            <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header  dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>ACHIEVEMENT PROGRAM</h6>
+                        </div>
+                    </div>
+                    <!-- participation -->
+                    <div class="row card-text">
+                        <div class="col">
+                            <div class="row ml-0">
+                            <p class="small">Participation:&nbsp;&nbsp;</p><div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1"><p class="small">Yes</p></label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><p class="small">No</p></label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- event date -->
+                    <div class="row card-text">
+                        <div class="col">
+                            <div class="row ml-0">
+                                <div class="col-xs-6">
+                                    <p class="small">Event Date:</p>
+                                </div>
+                                <div class="col-xs-6 mb-1 mr-0">
+                                    <input type="date" class="form-control" id="formStudentName">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- "next showcase" -->
+             <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header  dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>NEXT SHOWCASE</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        <div class="col">
+                            <p><i>input</i></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- "student goals" -->
+             <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header  dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>STUDENT GOALS</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        <div class="col">
+                            <p><i>input</i></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- "notes" -->
+             <div class="row card mb-2 shadow">
+                <div class="col">
+                    <div class="row card-header  dl-shader">
+                        <div class="col text-center text-light">
+                            <h6>NOTES</h6>
+                        </div>
+                    </div>
+                    <div class="row card-text">
+                        <div class="col">
+                            <p><i>input</i></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- main right column "instructor" -->
+        <div class="col-md-8 h-100 m-0">
+            <!-- instructor header row-->
+            <div class="row clearfix">
+                <!-- instructor name column -->
+                <div class="col-md-5">
+                        <div class="row card ml-0 mb-2 shadow">
+                                <div class="col">
+                                    <div class="row card-header  dl-shader">
+                                        <div class="col text-center text-light">
+                                                <h6 class="center">INSTRUCTOR NAME</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row card-text">
+                                        <div class="col">
+                                            <p><i>input</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                </div>
+                <!-- instrument column -->
+                <div class="col-md-5">
+                        <div class="row card ml-0 mb-2 shadow">
+                                <div class="col">
+                                    <div class="row card-header  dl-shader">
+                                        <div class="col text-center text-light">
+                                            <h6>INSTRUMENT</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row card-text">
+                                        <div class="col">
+                                            <p><i>input</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                </div>
+                <!-- logo column -->
+                <div class="col-md-2">
+                    <img src="./assets/images/gcs_logo.png" alt="lessons logo" class="mx-auto">
+                </div>
+            </div>
+            <!-- attendance row -->
+            <div class="row card mb-2 ml-0 shadow">
+                <div class="col-md-12">
+                    <!-- attendance title -->
+                    <div class="row card-header  dl-shader">
+                            <div class="col text-center text-light">
+                                <h6>ATTENDANCE</h6>
+                            </div>
+                    </div>
+                    <!-- week & date row -->
+                    <div class="row">
+                        <!-- week 1 -->
+                        <div class="col-md-3">
+                            <!-- week & date -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Week 1 - Date:</p>
+                                </div>
+                            </div>
+                            <!-- show or cancel -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Show/Cancel:</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- week 2 -->
+                        <div class="col-md-3">
+                            <!-- week & date -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Week 2 - Date:</p>
+                                </div>
+                            </div>
+                            <!-- show or cancel -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Show/Cancel:</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- week 3 -->
+                        <div class="col-md-3">
+                            <!-- week & date -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Week 3 - Date:</p>
+                                </div>
+                            </div>
+                            <!-- show or cancel -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Show/Cancel:</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- week 4 -->
+                        <div class="col-md-3">
+                            <!-- week & date -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Week 4 - Date:</p>
+                                </div>
+                            </div>
+                            <!-- show or cancel -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="small">Show/Cancel:</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- assignments row -->
+            <div class="row card ml-0 shadow">
+                <div class="col-md-12">
+                    <!-- "assignments" title row -->
+                    <div class="row clearfix card-header  dl-shader">
+                        <div class="col-md-12 text-center text-light">
+                            <p>ASSIGNMENTS</p> 
+                        </div>
+                    </div>
+                    <!-- assignments -->
+                    <div class="row clearfix scroller p-3 h-100">
+                        <div class="col-md-12">
+                            <!-- week 1 row-->
+                            <div class="row mb-2 pt-2 border">
+                                <!-- title column -->
+                                <div class="col-md-2 ">
+                                    <h6>WEEK 1</h6>
+                                </div>
+                                <!-- assignment input column -->
+                                <div class="col-md-10">
+                                    <!-- book row -->
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h6>BOOK is this a useable amount of space for assignments</h6>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control assign book-1"></input><button class="">submit</button>
+                                        </div>
+                                    </div>
+                                     <!-- tech/scales row -->
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h6>TECH/SCALES</h6>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control assign tech-1"></input><button class="small">submit</button>
+                                        </div>
+                                    </div>
+                                     <!-- song/piece row -->
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h6>SONG/PIECE</h6>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control assign song-1"></input><button class="small">submit</button>
+                                        </div>
+                                    </div>
+                                     <!-- other row -->
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h6>OTHER</h6>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input class="form-control assign other-1"></input><button class="small">submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- week 2 row-->
+                            <div class="row mb-2 pt-2 border">
+                                <!-- title column -->
+                                <div class="col-md-2">
+                                    <h6>W E E K 2</h6>
+                                </div>
+                                <!-- assignment input column -->
+                                <div class="col-md-10">
+                                    <!-- book row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>BOOK</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign book-2"></input>
+                                        </div>
+                                    </div>
+                                     <!-- tech/scales row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>TECH/SCALES</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign tech-2"></input>
+                                        </div>
+                                    </div>
+                                     <!-- song/piece row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>SONG/PIECE</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign song-2"></input>
+                                        </div>
+                                    </div>
+                                     <!-- other row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>OTHER</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign other-2"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- week 3 row-->
+                            <div class="row mb-2 pt-2 border">
+                                <!-- title column -->
+                                <div class="col-md-2">
+                                    <h6>WEEK 3</h6>
+                                </div>
+                                <!-- assignment input column -->
+                                <div class="col-md-10">
+                                    <!-- book row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>BOOK</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign book-3"></input>
+                                        </div>
+                                    </div>
+                                     <!-- tech/scales row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>TECH/SCALES</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign tech-3"></input>
+                                        </div>
+                                    </div>
+                                     <!-- song/piece row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>SONG/PIECE</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign song-3"></input>
+                                        </div>
+                                    </div>
+                                     <!-- other row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>OTHER</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign other-3"></input>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- week 4 row-->
+                            <div class="row mb-2 pt-2 border">
+                                <!-- title column -->
+                                <div class="col-md-2">
+                                    <h6>WEEK 4</h6>
+                                </div>
+                                <!-- assignment input column -->
+                                <div class="col-md-10">
+                                    <!-- book row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>BOOK</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign book-4"></input>
+                                        </div>
+                                    </div>
+                                     <!-- tech/scales row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>TECH/SCALES</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign tech-4"></input>
+                                        </div>
+                                    </div>
+                                     <!-- song/piece row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>SONG/PIECE</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign song-4"></input>
+                                        </div>
+                                    </div>
+                                     <!-- other row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>OTHER</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign other-4"></input>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+
+                                </div>
+                            </div>
+                              <!-- week 5 row-->
+                              <div class="row mb-2 pt-2 border">
+                                <!-- title column -->
+                                <div class="col-md-2">
+                                    <h6>WEEK 5</h6>
+                                </div>
+                                <!-- assignment input column -->
+                                <div class="col-md-10">
+                                    <!-- book row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>BOOK</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign book-5"></input>
+                                        </div>
+                                    </div>
+                                     <!-- tech/scales row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>TECH/SCALES</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign tech-5"></input>
+                                        </div>
+                                    </div>
+                                     <!-- song/piece row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>SONG/PIECE</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign song-5"></input>
+                                        </div>
+                                    </div>
+                                     <!-- other row -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>OTHER</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input class="assign other-5"></input>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+        </div>
+    </div>
+</div>
