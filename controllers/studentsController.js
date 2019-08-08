@@ -43,14 +43,10 @@ router.put("/students/?id=:id", function(req, res) {
 
 
 router.get("/students/:id", function(req, res) {
-  // express callback response by calling student.selectAllstudent
-  student.all(function(studentData) {
+student.all(function(studentData) {
     var studentId = req.params.id;
     console.log("get from students/:id " + studentData[studentId]);
-
-    // wrapper for orm.js that using MySQL query callback will return student_data, render to index with handlebar
     res.render("single-student", { student_data: studentData[studentId] });
-    // console.log("student data " + student_data.student_name[0]);
   });
 });
 
